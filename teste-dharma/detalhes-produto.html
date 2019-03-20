@@ -103,15 +103,27 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <p class="font-weight-bold font-size-40 float-right"><span class="font-size-20">R$</span> 234,00</p>
+                    <p class="font-weight-bold font-size-40 float-right">
+                        <!--<span class="font-size-20">R$</span> 234,00-->
+                        <script src='http://1951237.shop.netsuite.com/app/site/query/getitemprice.nl?c=1951237&n=1&id=8'></script>
+                    </p>
                 </div>
             </div>
             <div class="row margin-right-0">
 
                 <div class="col-md-12 padding-right-0">
 
-                    <a href="usuarios.html" class="btn btn-primary btn-lg float-right" role="button"><i
-                            class="fa fa-shopping-cart fa-lg"></i> Adicionar ao Carrinho</a>
+                    <!-- <a href="usuarios.html" class="btn btn-primary btn-lg float-right" role="button"><i
+                            class="fa fa-shopping-cart fa-lg"></i> Adicionar ao Carrinho</a> -->
+
+                    <form name=form8
+                        action='http://1951237.shop.netsuite.com/app/site/query/additemtocart.nl?c=1951237&n=1&ext=T'
+                        method=post><input type='hidden' name='buyid' value='8'><input type='hidden' name='c'
+                            value='1951237'><input type='hidden' name='n' value='1'>
+                        <td class='text'><input name='add' id='add' size=4 value=1></td>
+                        <td class='text'><input type=submit border='0' value='Adicionar ao carrinho'
+                                alt='Adicionar ao carrinho'></td>
+                    </form>
                 </div>
             </div>
             <div class="row">
@@ -138,13 +150,8 @@
                 <div class="col-md-12">
                     <h4 class="font-size-30 font-weight-bold">Descrição Detalhada:</h4>
                     <p class="font-size-20">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                        been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                        galley of type and scrambled it to make a type specimen book. It has survived not only five
-                        centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-                        passages, and more recently with desktop publishing software like Aldus PageMaker including
-                        versions of Lorem Ipsum.
+                        <script
+                            src='http://1951237.shop.netsuite.com/app/site/query/getitemldescr.nl?c=1951237&n=1&id=8'></script>
                     </p>
                 </div>
 
