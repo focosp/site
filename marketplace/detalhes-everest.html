@@ -159,7 +159,25 @@
             </div>
         </div>
     </section>
-
+    <section id="comentarios-discus">
+        <div class="container">
+            <div id="disqus_thread"></div>
+            <script>
+                (function() { 
+                var d = document, s = d.createElement('script');
+                s.src = 'https://focosp.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <script>
+                var disqus_config = function () {
+                    this.language = "pt";
+                };
+            </script>
+            <noscript>Por favor, habilite o JavaScript no seu navegador para poder visualizar a sessão de comentários <a href="https://disqus.com/?ref_noscript">powered by Disqus.</a></noscript>
+        </div>
+    </section>
     <!-- RODAPÉ DA PÁGINA -->
     <footer class="bg-dark" id="rodape">
         <div class="container">
