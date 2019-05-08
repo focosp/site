@@ -9,13 +9,12 @@
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="assets/css/focosp-ecommerce.css" />
-    <link rel="stylesheet" href="assets/css/detalhes-produto.css" />
+    <link rel="stylesheet" href="assets/css/focosp-ecommerce.min.css" />
 </head>
 
 <body>
     <!-- MENU DE NAVEGAÇÃO PRINCIPAL -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" id="foco">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Recolher menu">
             <span class="icon-bar top-bar"></span>
@@ -60,7 +59,7 @@
         </div>
     </header><!-- #cabecalho -->
     <!-- DELIMITADORES DO INÍCIO DA SEÇÃO -->
-    <div class="container-fluid separador">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-7 separador-esquerda"></div>
             <div class="col-md-5 separador-direita"></div>
@@ -68,7 +67,7 @@
     </div><!-- .separador -->
 
     <!-- AQUI COMEÇA OS DETALHES DO PRODUTO -->
-    <section class="secao" id="detalhes">
+    <section class="secao">
         <h2 class="titulo">Detalhes do Produto</h2>
         <hr class="divisao-titulo-secao" />
         <div class="container">
@@ -92,7 +91,6 @@
                 <div class="col-md-12">
                     <p class="font-weight-bold font-size-40 float-right">
                         <!-- PREÇO DO ITEM-->
-                        <!--<span class="font-size-20">R$</span> 234,00-->
                         <script src='http://1951237.shop.netsuite.com/app/site/query/getitemprice.nl?c=1951237&n=1&id=8'></script>
                         <a href="#form-contato" role="button" class="btn btn-success btn-lg">Solicitar Orçamento</a>
                     </p>
@@ -116,7 +114,7 @@
                 </a>
             </div>
     </section>
-    <section class="desc-completa secao">
+    <section class="secao">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -130,7 +128,7 @@
             </div>
         </div>
     </section>
-    <section class="sessao" id="comentarios-discus">
+    <section class="secao" id="comentarios-discus">
         <h2 class="titulo">Conte-nos o que Pensa</h2>
         <div class="container">
             <div id="disqus_thread"></div>
@@ -150,7 +148,7 @@
             <noscript>Por favor, habilite o JavaScript no seu navegador para poder visualizar a sessão de comentários <a href="https://disqus.com/?ref_noscript">powered by Disqus.</a></noscript>
         </div>
     </section>
-    <section class="secao" id="form-contato" style="padding:30px 15px 0 15px">
+    <section class="secao" style="padding:30px 15px 0 15px">
         <h2 class="titulo">Formulário de Orçamento</h2>
         <hr class="divisao-titulo-secao" />
         <form method="POST" action="https://1951237.extforms.netsuite.com/app/site/crm/externalleadpage.nl?compid=1951237&formid=1&h=AACffht_WKJ8rjyiv4mWlYGhMT8BwfOMqnA">
@@ -191,7 +189,7 @@
         </div><!-- .container -->
     </div><!-- .cadastro -->
 </section><!-- #form-contato -->
-<div style="clear:both"></div><!-- div para clear de floats -->
+<div class="clear"></div><!-- div para clear de floats -->
     <!-- RODAPÉ DA PÁGINA -->
     <footer class="bg-dark" id="rodape" style="margin-top:15px">
         <div class="container">
