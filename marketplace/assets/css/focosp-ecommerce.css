@@ -54,7 +54,7 @@ h4 {
 
 .navbar-toggler .top-bar {
   transform: rotate(45deg);
-  transform-origin: 10% 10%;
+	transform-origin: 10% 10%;
 }
  
 .navbar-toggler .middle-bar {
