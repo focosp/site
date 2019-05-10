@@ -2,9 +2,6 @@
 
 function initComponents() {
     initAccordion();
-
-    document.getElementById("everest-btn-external-chat")
-        .addEventListener("onclick", removeChatButton);
 }
 
 
@@ -24,11 +21,5 @@ function initAccordion() {
         };
     });
 }
-
-/*
-function removeChatButton() {
-    let button = document.getElementById("everest-btn-external-chat");
-    //button.parentNode.removeChild(button);
-}*/
 
 initComponents();
