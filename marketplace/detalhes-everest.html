@@ -153,38 +153,79 @@
         <hr class="divisao-titulo-secao" />
         <form method="POST" action="https://1951237.extforms.netsuite.com/app/site/crm/externalleadpage.nl?compid=1951237&formid=1&h=AACffht_WKJ8rjyiv4mWlYGhMT8BwfOMqnA">
             <div class="form-row">
-                    <div class="form-group col-md-6">
-                            <label for="nome-empresa">Nome da Empresa<span class="field-required">*</span>:</label>
-                            <input type="text" required class="form-control" name="companyname" id="nome-empresa" />
-                        </div>
-                    <div class="form-group col-md-6">
-                            <label for="cpf-cnpj">CPF / CNPJ<span class="field-required">*</span>:</label>
-                            <input type="text" required class="form-control" name="custentity_cpf_cnpj" id="cpf-cnpj" />
-                        </div>
                 <div class="form-group col-md-6">
-                    <label for="nome-proprio">Nome<span class="field-required">*</span>:</label>
-                    <input type="text" required class="form-control" name="firstname" id="nome-proprio" />
+                    <label for="companyname">Nome da Empresa <span class="field-required">*</span>:</label>
+                    <input type="text" name="companyname" class="companyname" id="companyname" />
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="sobrenome">Sobrenome<span class="field-required">*</span>:</label>
-                    <input type="text" required class="form-control" name="lastname" id="sobrenome" />
+                    <label for="custentity_cpf_cnpj">Nome da Empresa <span class="field-required">*</span>:</label>
+                    <input type="text" name="custentity_cpf_cnpj" class="custentity_cpf_cnpj" id="custentity_cpf_cnpj" />
                 </div>
-                <div class="form-group col-md-12">
-                    <label for="email">E-mail<span class="field-required">*</span>:</label>
-                    <input type="email" required class="form-control" name="email" id="email" />
+                <div class="form-group col-md-6">
+                    <label for="firstname">Nome <span class="field-required">*</span>:</label>
+                    <input type="text" name="firstname" class="firstname" id="firstname" />
                 </div>
-                <div class="form-group col-md-12">
-                        <label for="interesse">Interesse<span class="field-required">*</span>:</label>
-                        <div class="comments"></div>
-                        <p>
-                                Digite aqui o(s) item(ns) de interesse e demais informações e entraremos em contato via e-mail
-                        </p>
-                        
-                        <textarea required class="form-control" name="comments"></textarea>
-                        </div>
-                    </div>
+                <div class="form-group col-md-6">
+                    <label for="lastname">Sobrenome <span class="field-required">*</span>:</label>
+                    <input type="text" name="lastname" class="lastname" id="lastname" />
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="email">Email <span class="field-required">*</span>:</label>
+                    <input type="email" name="email" class="email" id="email" />
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="custentity_id_item">Item de Interesse <span class="field-required">*</span>:</label>
+                    <select name="custentity_id_item" class="custentity_id_item" id="custentity_id_item">
+                        <option value="1">Software Everest</option>
+                        <option value="2">Plataforma E-commerce</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="custentity_item_price">Preço do Item <span class="field-required">*</span>:</label>
+                    <input type="text" name="custentity_item_price" id="custentity_item_price" class="custentity_item_price" />
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="custentity_item_quantity">Quantidade do Item <span class="field-required">*</span>:</label>
+                    <input type="text" name="custentity_item_quantity" id="custentity_item_quantity" class="custentity_item_quantity" />
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="custentity_id_salesrep">Vendedor <span class="field-required">*</span>:</label>
+                    <select class="custentity_id_salesrep" name="custentity_id_salesrep" id="custentity_id_salesrep">
+                        <option value="1">Marcela Dias</option>
+                        <option value="2">Pedro Campos</option>
+                        <option value="3">Ricardo Ribeiro</option>
+                        <option value="4">Maria dos Santos</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="addr1">Endereço <span class="field-required">*</span>:</label>
+                    <input type="text" name="addr1" id="addr1" class="addr1" />
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="custentity_addr_number">Número <span class="field-required">*</span>:</label>
+                    <input type="text" name="custentity_addr_number" id="custentity_addr_number" class="custentity_addr_number" />
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="addr3">Bairro <span class="field-required">*</span>:</label>
+                    <input type="text" name="addr3" id="addr3" class="addr3" />
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="city">Cidade <span class="field-required">*</span>:</label>
+                    <input type="text" name="city" id="city" class="city" />
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="state">Estado <span class="field-required">*</span>:</label>
+                    <input type="text" name="state" id="state" class="state" />
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="zipcode">CEP <span class="field-required">*</span>:</label>
+                    <input type="text" name="zipcode" id="zipcode" class="zipcode" />
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="phone">Telefone <span class="field-required">*</span>:</label>
+                    <input type="text" name="phone" id="phone" class="phone" />
+                </div>
             </div>
-            <input type="submit" class="btn btn-primary btn-lg float-right" value="Enviar" />
         </form>
         </div><!-- .container -->
     </div><!-- .cadastro -->
