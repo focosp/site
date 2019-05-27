@@ -1,0 +1,39 @@
+<html>
+    <body>
+
+        <script>
+            var dataRaw = {
+                "email" : "gsilva@focosp.com",
+                "due_date" : "Thu May 30 2019 13:44:39 GMT-0300 (Horário Padrão de Brasília)",
+                "items": [
+                    {
+                        "description": "Software para Conversas",
+                        "price_cents": "23400",
+                        "quantity": "1"
+                    }
+                ],
+                "payer": "Robson Bolos",
+                "address": {
+                    "zip_code":"03636-100",
+                    "number":"1230"
+                }
+            }; 
+
+            var data = JSON.stringify(dataRaw);
+
+            var xhr = new XMLHttpRequest();
+            xhr.withCredentials = true;
+
+            xhr.addEventListener("readystatechange", function(){
+                if (this.readyState == this.DONE) {
+                    console.log(this.responseText);
+                }
+            });
+
+
+            xhr.open("POST", "https://api.iugu.com/v1/invoices");
+
+            xhr.send(data);
+        </script>
+    </body>
+</html>
