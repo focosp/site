@@ -1,6 +1,6 @@
 <html>
     <body>
-
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script>
             var dataRaw = {
                 "email" : "gsilva@focosp.com",
@@ -19,21 +19,28 @@
                 }
             }; 
 
-            var data = JSON.stringify(dataRaw);
-
-            var xhr = new XMLHttpRequest();
-            xhr.withCredentials = true;
-
-            xhr.addEventListener("readystatechange", function(){
-                if (this.readyState == this.DONE) {
-                    console.log(this.responseText);
-                }
-            });
-
-
-            xhr.open("POST", "https://api.iugu.com/v1/invoices");
-
-            xhr.send(data);
+            $.ajax({
+            url: "https://api.iugu.com/v1/invoices",
+            method: "POST",
+            dataType: "json",
+            crossDomain: true,
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify(dataRaw),
+            cache: false,
+            beforeSend: function (xhr) {
+                /* Authorization header */
+                xhr.setRequestHeader("Authorization", "Basic " + "NjQ5YjJiYzg0YTYwNjAyNTE5ZDc5ODg4Y2JiNDJiNzY6");
+                xhr.setRequestHeader("X-Mobile", "false");
+            },
+            success: function (data) {
+                console.log(data);
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                console.log(jqXHR);
+                console.log(textStatus);
+                console.log(errorThrown);
+            }
+        });
         </script>
     </body>
 </html>
