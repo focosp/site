@@ -21,24 +21,17 @@
 
             $.ajax({
             url: "https://api.iugu.com/v1/invoices",
-            method: "POST",
-            dataType: "json",
+            type: "POST",
             crossDomain: true,
-            contentType: "application/json; charset=utf-8",
             data: JSON.stringify(dataRaw),
-            cache: false,
-            beforeSend: function (xhr) {
-                /* Authorization header */
-                xhr.setRequestHeader("Authorization", "Basic " + "NjQ5YjJiYzg0YTYwNjAyNTE5ZDc5ODg4Y2JiNDJiNzY6");
-                xhr.setRequestHeader("X-Mobile", "false");
+            dataType: "json",
+            success: function (response) {
+                var resp = JSON.parse(response);
+                console(resp.status);
             },
-            success: function (data) {
-                console.log(data);
-            },
-            error: function (jqXHR, textStatus, errorThrown) {
-                console.log(jqXHR);
-                console.log(textStatus);
-                console.log(errorThrown);
+            error: function (xhr, status) {
+                console.log(xhr);
+                console.log(status);
             }
         });
         </script>
