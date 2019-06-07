@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>FocoSP | Marketplace</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="assets/img/favicon.ico" />
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/focosp-ecommerce.min.css" />
+</head>
+
+<body>
+    <!-- MENU DE NAVEGAÇÃO PRINCIPAL -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" id="foco">
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Recolher menu">
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+        </button><!-- #navbarText .navbar-toggler -->
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="http://www.focosp.com">FocoSP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://focosp.com/#sobre">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://focosp.com/#netsuite">NetSuite</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://focosp.com/#solucoes">Soluções</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://focosp.com/#contato">Contato</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://focosp.com/marketplace">MarketPlace</a>
+                </li>
+            </ul>
+        </div><!-- #navbarText .navbar-collapse -->
+    </nav><!-- #foco .navbar -->
+
+    <!-- AQUI COMEÇA O CABEÇALHO -->
+    <header id="cabecalho">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                    <a href="index.html"><img src="assets/img/logo-focosp.png" class="img-fluid" /></a>
+                </div>
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                    <img src="assets/img/logo-marketplace.png" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </header><!-- #cabecalho -->
+    <!-- DELIMITADORES DO INÍCIO DA SEÇÃO -->
+    <div class="container-fluid separador">
+        <div class="row">
+            <div class="col-md-7 separador-esquerda"></div>
+            <div class="col-md-5 separador-direita"></div>
+        </div>
+    </div><!-- .separador -->
+
+    <!-- AQUI COMEÇA OS DETALHES DO PRODUTO -->
+    <section class="secao" id="detalhes">
+        <h2 class="titulo">Detalhes do Produto</h2>
+        <hr class="divisao-titulo-secao" />
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src='http://1951237.shop.netsuite.com/core/media/media.nl?id=12&c=1951237&h=66bcd82c975f2cb49557' />
+                </div>
+                <div class="col-md-8">
+                    <h2 class="bold">
+                        <script
+                            src='http://1951237.shop.netsuite.com/app/site/query/getitemname.nl?c=1951237&n=1&id=9'></script>
+                    </h2>
+                    <p class="text-muted font-weight-bold">FocoSP - <span class="font-weight-bold font-italic">Software
+                            para
+                            lojas virtuais</span></p>
+                    <p class="font-size-25">
+                        <script
+                            src='http://1951237.shop.netsuite.com/app/site/query/getitemsdescr.nl?c=1951237&n=1&id=9'></script>
+                    </p>
+                </div>
+            </div>
+            <!-- PREÇO -->
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="font-weight-bold font-size-40 float-right">
+                        <!--<span class="font-size-20">R$</span> 234,00-->
+                        <!-- PREÇO DO ITEM-->
+                        <script src='http://1951237.shop.netsuite.com/app/site/query/getitemprice.nl?c=1951237&n=1&id=9'></script>
+                        <a href="#form-contato" role="button" class="btn btn-success btn-lg">Solicitar Orçamento</a>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <h3 class="text-muted font-weight-bold font-size-30">Capturas de Tela:</h3>
+            </div>
+            <div clas="row">
+                <a href="assets/img/produto-grande.png" class="col-md-2" data-toggle="lightbox" data-gallery="gallery">
+                    <img src="assets/img/produto-thumb.png" class="thumb-produto">
+                </a>
+                <a href="assets/img/produto-grande2.png" class="col-md-2" data-toggle="lightbox" data-gallery="gallery">
+                    <img src="assets/img/produto-thumb2.png" class="thumb-produto">
+                </a>
+                <a href="assets/img/produto-grande3.png" class="col-md-2" data-toggle="lightbox" data-gallery="gallery">
+                    <img src="assets/img/produto-thumb3.png" class="thumb-produto">
+                </a>
+                <a href="assets/img/produto-grande4.png" class="col-md-2" data-toggle="lightbox" data-gallery="gallery">
+                    <img src="assets/img/produto-thumb4.png" class="thumb-produto">
+                </a>
+            </div>
+    </section>
+    <section class="desc-completa secao">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 class="font-size-30 font-weight-bold">Descrição Detalhada:</h4>
+                    <p class="font-size-20">
+                        <script
+                            src='http://1951237.shop.netsuite.com/app/site/query/getitemldescr.nl?c=1951237&n=1&id=9'></script>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="sessao" id="comentarios-discus">
+    	<h2 class="titulo">Conte-nos o que Pensa</h2>
+    	<div class="container">
+	    	<div id="disqus_thread"></div>
+	    	<script>
+				(function() { 
+				var d = document, s = d.createElement('script');
+				s.src = 'https://focosp.disqus.com/embed.js';
+				s.setAttribute('data-timestamp', +new Date());
+				(d.head || d.body).appendChild(s);
+				})();
+			</script>
+			<script>
+				var disqus_config = function () {
+				    this.language = "pt";
+				};
+			</script>
+			<noscript>Por favor, habilite o JavaScript no seu navegador para poder visualizar a sessão de comentários <a href="https://disqus.com/?ref_noscript">powered by Disqus.</a></noscript>
+		</div>
+    </section>
+    <section class="secao" id="form-contato" style="padding:30px 15px 0 15px">
+        <iframe src="https://1951237.extforms.netsuite.com/app/site/hosting/scriptlet.nl?script=65&deploy=1&compid=1951237&h=4eacf6c8936e6dafff77">
+        </iframe>
+    <div style="clear:both"></div><!-- div para clear de floats -->
+    <!-- RODAPÉ DA PÁGINA -->
+    <footer class="bg-dark" id="rodape" style="margin-top:15px">
+        <div class="container">
+            <div class="row">
+                <!-- LOGOTIPO DA FOCOSP -->
+                <div class="col-md-2 col-sm-12">
+                    <h1 class="logo text-center">FocoSP</h1>
+                </div>
+                <!-- LISTAS DE NAVEGAÇÃO SECUNDÁRIAS -->
+                <div class="col-md-3 col-sm-12">
+
+                    <!-- LISTA 1 -->
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="http://www.focosp.com" class="text-white text-underline">FocoSP</a>
+                        </li>
+                        <li>
+                            <a href="http://www.focosp.com/marketplace" class="text-white text-underline">MarketPlace</a>
+                        </li>
+                        <li>
+                            <a href="http://www.focosp.com#sobre" class="text-white text-underline">Sobre</a>
+                        </li>
+                        <li>
+                            <a href="http://www.focosp.com#netsuite" class="text-white text-underline">NetSuite</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-md-3 col-sm-12">
+
+                    <!-- LISTA 2 -->
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="http://www.focosp.com#solucoes" class="text-white text-underline">Soluções</a>
+                        </li>
+                        <li>
+                            <a href="http://www.focosp.com#contato" class="text-white text-underline">Contato</a>
+                        </li>
+                        <li>
+                            <a href="http://1951237.shop.netsuite.com/app/site/query/cartredirect.nl?c=1951237&n=1&ext=T" class="text-white text-underline">Carrinho de Compras</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white text-underline">Política de Privacidade</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div><!-- .container -->
+        <div class="container-fluid footer-cartoes">
+            <div class="row">
+                <!-- LOGOTIPO DOS CARTÕES DE CRÉDITO-->
+                <div class="col-md-6">
+                    <img src="assets/img/cartoes.png" />
+                </div>
+                <!--COPYRIGHT-->
+                <div class="col-md-6">
+                    <p class="text-white text-copyright">2019 - FocoSP - Todos os
+                        Direitos Reservados</p>
+                </div>
+            </div>
+        </div>
+    </footer><!-- #rodape -->
+
+
+
+    <!-- LISTA DE SCRIPTS UTILIZADOS NO SITE -->
+    <script src="libs/jquery/jquery.min.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+    <script src="assets/js/focosp.js"></script>
+    <script id="dsq-count-scr" src="//focosp.disqus.com/count.js" async></script>
+</body>
+
+</html>
